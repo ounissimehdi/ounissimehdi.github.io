@@ -1,0 +1,8 @@
+@article{Jimenez2019,
+  title={Deep Learning for Semantic Segmentation versus Classification in Computational Pathology: Application to mitosis analysis in Breast Cancer grading},
+  author={Jimenez, G. and Racoceanu, D.},
+  journal={Front. Bioeng. Biotechnol.},
+  year={2019},
+  month={June},
+  day={21},
+}
