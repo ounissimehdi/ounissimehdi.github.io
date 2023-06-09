@@ -54,56 +54,61 @@
 	<!-- end header -->
 	<section id="featured">
 	 
+	<style>
+		#main-slider .slides li {
+			display: none;
+		}
+
+		#main-slider .slides .flex-active-slide {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+
+		.slide-content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+		}
+
+		.slider-img {
+			width: 200px;
+			height: 400px;
+			object-fit: cover;
+		}
+
+		
+
+
+	</style>
+
 	<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-				<li style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-					<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-										
-						<!-- <div style="width: 20%; display: flex; flex-direction: column; align-items: center; justify-content: center;"> -->
-							
-						<img style="width: 20%;" src="https://github.com/ounissimehdi/PhagoStat/blob/main/demos/result_norm.gif?raw=true">
-						<!-- <img style="height: 5%;"src="https://github.com/ounissimehdi/PhagoStat/blob/main/demos/result_semantic.gif?raw=true"> -->
-						<img style="width: 20%;" src="https://github.com/ounissimehdi/PhagoStat/blob/main/demos/result_tracking.gif?raw=true">
-						<!-- </div> -->
-					</div>
-				
+	<div id="main-slider" class="flexslider">
+		<ul class="slides">
+			<li>
+				<div class="slide-content">
+					<img class="slider-img" src="https://github.com/ounissimehdi/PhagoStat/blob/main/demos/result_semantic.gif?raw=true">
+					<img class="slider-img" src="https://github.com/ounissimehdi/PhagoStat/blob/main/demos/result_tracking.gif?raw=true">
+				</div>
+			</li>
+			<li>
+				<div class="slide-content">
+					<img class="slider-img" src="https://github.com/ounissimehdi/WSI-OPT-registration/blob/main/before_registration_animation.gif?raw=true">
+					<img class="slider-img" src="https://github.com/ounissimehdi/WSI-OPT-registration/blob/main/registration_animation_ratio_corrected.gif?raw=true">
+				</div>
+			</li>
+			<li>
+				<div class="slide-content">
+					<img class="slider-img" src="videos/malmo_base.gif" alt="" />
+				</div>
+			</li>
+		</ul>
+	</div>
+	
 
-				</li>
-
-				<li style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-					<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-										
-						<!-- <div style="width: 20%; display: flex; flex-direction: column; align-items: center; justify-content: center;"> -->
-							
-						<img style="width: 30%;" src="https://github.com/ounissimehdi/WSI-OPT-registration/blob/main/before_registration_animation.gif?raw=true">
-						<img style="width: 30%;" src="https://github.com/ounissimehdi/WSI-OPT-registration/blob/main/registration_animation_ratio_corrected.gif?raw=true">
-						<!-- </div> -->
-					</div>
-				
-
-				</li>
-				
-				
-				  
-				  
-
-				<!-- <li>  
-					<img src="img/slides/2.jpg" alt="" />
-					<div class="flex-caption">
-						<h3>Fully Responsive</h3> 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitincidunt eius magni provident.</p> 
-					</div>
-              	</li> -->
-				<!-- <li>
-					<img src="img/slides/3.jpg" alt="" />
-					<div class="flex-caption">
-						<h3>Multi-purpose Theme</h3> 
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p>  
-					</div>
-              	</li> -->
-            </ul>
-        </div>
 	<!-- end slider -->
  
 	</section>
