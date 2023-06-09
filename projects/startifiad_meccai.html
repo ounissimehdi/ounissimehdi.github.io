@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daniel Racoceanu | Prof. website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com" />
+<!-- css -->
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+<link href="../css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="../css/jcarousel.css" rel="stylesheet" />
+<link href="../css/flexslider.css" rel="stylesheet" />
+<link href="../css/style.css" rel="stylesheet" />
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <!-- <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="logo" width="50"/></a>
+                </div> -->
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li> 
+						<li><a href="../short bio.html">Short Bio</a></li>
+						<li><a href="../cv.html">Curriculum Vitae</a></li>
+						<li><a href="../courses.html">Courses</a></li>
+						<li><a href="../research.html">Research</a></li>  
+						<li><a href="../publications.html">Publications</a></li>  
+						<li><a href="../projects.html">Projects</a></li>
+						<li><a href="../industrial.html">Industrial collaborations and experience</a></li>
+						<li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header><!-- end header -->
+</div>
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="pageTitle">Visual deep learning-based explanation for neuritic plaques segmentation in Alzheimer’s Disease using weakly annotated whole slide histopathological images</h2>
+                    <p class="pageTitle">Gabriel Jimenez, Anuradha Kar, Mehdi Ounissi, Léa Ingrassia, Susana Boluda, Benoît Delatour, Lev Stimmer, and Daniel Racoceanu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+                        
+            <div class="about">
+                <div class="row"> 
+                    <div class="col-md-12">
+                    <h2>About the project</h2>
+                    <ul>
+                        <li>The problem:
+                            <ul>
+                                <li>AD is caused by misfolding and accumulation of Amyloid-beta peptides and tau proteins.</li>
+                                <li>The clinical presentation of the patients is very heterogeneous.</li>
+                                <li>In vivo imaging methodologies do not offer the resolution obtained by microscopy.</li>
+                            </ul>
+                        </li>
+                        <li>Findings:
+                            <ul>
+                                <li>Tau pathologies (tauopathies) are highly linked to clinical manifestations of AD [Duyckaerts, C., et al. Classification and basic pathology of Alzheimer disease. Acta Neuropathologica, 2009.]</li>
+                            </ul>
+                        </li>
+                        <li>The idea:
+                            <ul>
+                                <li>Automatic segmentation of tau protein aggregates (neuritic plaques) from WSI.</li>
+                                <li>Manual annotation refinement using deep learning attention mechanisms and visual explainability features from DL models.</li>
+                                <li>Evaluate the impact of context information and antibodies on the DL performance.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2>Dataset</h2>
+                    <p>Properties of the datasets used in the study. For details about the sampling protocols and data augmentation please refer to the <a href="https://export.arxiv.org/abs/2302.08511">article</a>.</p>
+                    <style>
+                        table {
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 50%; /* You can adjust this as needed */
+                            border-collapse: collapse;
+                        }
+                    
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: center;
+                        }
+                    
+                        th {
+                            padding-top: 12px;
+                            padding-bottom: 12px;
+                            background-color: #16d0fa91;
+                            color: rgb(1, 1, 1);
+                        }
+                    </style>
+                    
+                    <table>
+                        <tr>
+                            <th>Dataset 1</th>
+                            <th>Dataset 2</th>
+                        </tr>
+                        <tr>
+                            <td>6 WSI</td>
+                            <td>8 WSI</td>
+                        </tr>
+                        <tr>
+                            <td>ALZ50 antibodies</td>
+                            <td>AT8 antibodies</td>
+                        </tr>
+                        <tr>
+                            <td>NanoZoomer 2.0-RS</td>
+                            <td>NanoZoomer 2.0-RS & S60</td>
+                        </tr>
+                        <tr>
+                            <td>128x128 patch-size</td>
+                            <td>128x128 & 256x256 patch-size</td>
+                        </tr>
+                        <tr>
+                            <td>20x (227 nm/px @ 40x)</td>
+                            <td>20x (227 & 221 nm/px @ 40x)</td>
+                        </tr>
+                    </table>
+                    
+                    
+                    <h2>Results</h2>
+
+                    <p>See all the results and analysis in our 
+                    <a href="https://github.com/aramis-lab/miccai2022-stratifiad">github</a> and 
+                    <a href="https://export.arxiv.org/abs/2302.08511">article</a>.
+                    </p>
+
+                    <div style="text-align: center;">
+                        <img width="80%" src="https://github.com/stratifIAD/unet-pytorch/blob/098f742f58799e4ff277d0f4f1c6ecb32e257ed1/imgs/patchsize.png?raw=true">
+                        <br>Example of plaque image for different levels of context. It was shown that context information impacted on the network performance.
+                    </div>
+
+                    <div style="text-align: center;">
+                        <img width="80%" src="https://github.com/stratifIAD/unet-pytorch/blob/098f742f58799e4ff277d0f4f1c6ecb32e257ed1/imgs/att_unet.png?raw=true">
+                        <br>Focus progression using successive activation layers of attention-UNet. This model proved to be useful for improving the manual annotations of neuritic plaques.
+                    </div>
+
+                    <h2>Application</h2>
+
+                    <div style="text-align: center;">
+                        <img width="80%" src="https://github.com/stratifIAD/unet-pytorch/blob/098f742f58799e4ff277d0f4f1c6ecb32e257ed1/imgs/stratifiad-system.png?raw=true">
+                        <br>Final application using the deep learning pipelines developed in the project. The main goal is to achieve patient stratification.
+                    </div>
+
+
+
+                    <h2>Key ideas from the study</h2>
+                    <ol>
+                        <li>
+                            Antibodies can impact the detection and segmentation of tau aggregates in WSI.
+                            <ul>
+                                <li>AT8 creates less compact structures making segmentation of plaques challenging.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            WSI are frequently acquired using different scanners having different properties.
+                            <ul>
+                                <li>Amplification of human-software annotation errors.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            The context effect in segmentation
+                            <ul>
+                                <li>Related to the negative impact of larger patch size.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Visual explainability to improve manual annotations.
+                            <ul>
+                                <li>Improve morphological analysis of tau aggregates.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Benchmark with commercial software
+                            <ul>
+                                <li>Outperformed in test dataset. Commercial software follows a black-box approach; therefore, no explainability.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <h2>How to cite this work:</h2>
+                    
+                    <p>This project was published in MICCAI 2022. Use the following citation if you used the 
+                    <a href="https://github.com/aramis-lab/miccai2022-stratifiad">github</a> code and/or the dataset associated to it. </p>
+                    
+                    <pre>
+                    @InProceedings{miccai-paper-2116,
+                    author="Jimenez, Gabriel and Kar, Anuradha and Ounissi, Mehdi and Ingrassia, Léa and Boluda, Susana and Delatour, Benoît and Stimmer, Lev and Racoceanu, Lev",
+                    title="Visual DL-based explanation for neuritic plaques segmentation in Alzheimer's Disease",
+                    booktitle="Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2022",
+                    year="2022",
+                    publisher="Springer International Publishing",
+                    }
+                    </pre>
+                    
+                        
+
+                    </p>
+
+
+                    
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+</section>
+
+<style> 
+	#pre_footer img {
+		/* width: 100px; */
+		height: 60px;
+	}
+	#pre_footer_support {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-table {
+		width: 80%;
+		border: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.footer-link {
+		width: 1%;
+	}
+
+	</style>
+	</br></br>
+	<div id="pre_footer">
+		<div id="pre_footer_support">
+			<table class="footer-table">
+				<tr>
+					<td class="footer-link"><a href="https://www.sorbonne-universite.fr/en" title="Sorbonne University"><img src="../img/logos/Logo_of_Sorbonne_University.svg" alt="Sorbonne University" id="Sorbonne"></a></td>
+					<!-- <td class="footer-space"></td> -->
+					<td class="footer-link"><a href="https://institutducerveau-icm.org/en/" title="Paris Brain Institute"><img src="../img/logos/paris-brain-institute-icm-logo-vector.svg" alt="Paris Brain Institute" id="ICM"></a></td>
+					<!-- <td class="footer-space"></td> -->
+					<td class="footer-link"><a href="https://www.inria.fr/en" title="Inria"><img src="../img/logos/inria.svg" alt="inria" id="INRIA"></a></td>
+					<!-- <td class="footer-space"></td> -->
+					<td class="footer-link"><a href="http://www.cnrs.fr/en/cnrs" title="French National Centre for Scientific Research - CNRS"><img src="../img/logos/logoCNRS.svg" alt="CNRS" id="CNRS"></a></td>
+					<!-- <td class="footer-space"></td> -->
+					<td class="footer-link"><a href="https://www.inserm.fr/en" title="INSERM"><img src="../img/logos/Inserm.svg" alt="INSERM" id="INSERM"></a></td>
+					<!-- <td class="footer-space"></td> -->
+					<td class="footer-link"><a href="https://www.aphp.fr/" title="APHP"><img src="../img/logos/Assistance_publique.svg" alt="APHP" id="APHP"></a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</br></br>
+
+<footer>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-3">
+            <div class="widget">
+            <h5 class="widgetheading">Our Contact</h5>
+            <address>
+            <strong>Daniel RACOCEANU</strong><br>
+            Sorbonne University<br>
+            Faculty of Science and Engineering<br>
+            Engineering Departement<br>
+            4 place Jussieu, 75005 Paris, France</address><br>
+            <p>
+                <i class="icon-envelope-alt"></i> daniel.racoceanu@sorbonne-universite.fr
+            </p>
+            </div>
+        </div>
+        
+    
+    
+        </div>
+    </div>
+    <div id="sub-footer">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+            <div class="copyright">
+                <p>
+                <span>&copy; All right reserved. By </span><a href="http://webthemez.com" target="_blank">WebThemez</span></a>
+                </p>
+            </div>
+            </div>
+            <div class="col-lg-6">
+            <ul class="social-network">
+                <li><a href="https://www.researchgate.net/profile/Daniel-Racoceanu" data-placement="top" title="ResearchGate"><i class="fab fa-researchgate"></i>
+                <li><a href="https://twitter.com/daniraco" data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/daniraco" data-placement="top" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/daniraco" data-placement="top" title="Github"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://scholar.google.com/citations?user=2eBRLj0AAAAJ&hl" data-placement="top" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>
+                <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=daniel+racoceanu" data-placement="top" title="PubMed"><i class="fas fa-book-medical"></i></a></li>
+                <li><a href="https://orcid.org/0000-0002-9416-1803" data-placement="top" title="ORCID"><i class="fas fa-id-badge"></i></a></li> 
+                
+            </ul>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    </footer>
+    </div>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.fancybox-media.js"></script> 
+    <script src="js/portfolio/jquery.quicksand.js"></script>
+    <script src="js/portfolio/setting.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/fontawesome/all.js"></script>
+</body>
+</html>
